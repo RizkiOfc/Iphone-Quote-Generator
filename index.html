@@ -604,7 +604,7 @@
             const animateParticles = () => { ctx.clearRect(0, 0, canvas.width, canvas.height); particles.forEach(p => { p.update(); p.draw(); }); ctx.globalAlpha = 1.0; requestAnimationFrame(animateParticles); };
             
             const textScramble = (el) => {
-                const originalText = "©URANUSFAZRY";
+                const originalText = "DevTools";
                 const chars = '!<>*#{}[]'; let frame = 0; isAnimating = true;
                 const interval = setInterval(() => {
                     el.innerText = originalText.split('').map((char, i) => { const p = (frame - i * 2) / 15; if (p < 0) return ' '; if (p > 1) return char; return chars[Math.floor(Math.random() * chars.length)]; }).join("");
@@ -635,11 +635,11 @@
                         mainContentEl.classList.add('hidden');
                         setTimeout(() => {
                             followContentEl.classList.remove('hidden');
-                            typewriter(followMessageEl, "Follow uranusfazry YouTube");
+                            typewriter(followMessageEl, "DevTools.");
                         }, 400);
                         break;
                     case 'tiktok': 
-                        typewriter(followMessageEl, "Follow uranusfazry TikTok"); 
+                        typewriter(followMessageEl, "Iphone Quote Generator."); 
                         break;
                     case 'reset':
                         isAnimating = true;
