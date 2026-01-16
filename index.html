@@ -549,7 +549,7 @@
       (function() {
         function initializeWatermark() {
             const watermarkHTML = `
-              <div id="futuristic-watermark" class="light-mode" title="Design by ©URANUSFAZRY">
+              <div id="futuristic-watermark" class="light-mode" title="Rizki">
                 <canvas id="particle-canvas"></canvas>
                 <div class="f-content-wrapper">
                   <div id="f-main-content" class="f-content">
@@ -559,7 +559,7 @@
                           <path d="M50 5 L95 50 L50 95 L5 50 Z"/>
                       </svg>
                     </div>
-                    <span id="f-watermark-text">©URANUSFAZRY</span>
+                    <span id="f-watermark-text">©RizkiEngine</span>
                   </div>
                   <div id="f-follow-content" class="f-content hidden">
                       <span id="f-follow-message"></span>
@@ -635,11 +635,11 @@
                         mainContentEl.classList.add('hidden');
                         setTimeout(() => {
                             followContentEl.classList.remove('hidden');
-                            typewriter(followMessageEl, "DevTools.");
+                            typewriter(followMessageEl, "RizkiEngine.");
                         }, 400);
                         break;
                     case 'tiktok': 
-                        typewriter(followMessageEl, "Iphone Quote Generator."); 
+                        typewriter(followMessageEl, "Iphone Quoted Generator."); 
                         break;
                     case 'reset':
                         isAnimating = true;
